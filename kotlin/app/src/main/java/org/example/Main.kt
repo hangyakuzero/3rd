@@ -3,7 +3,7 @@
  */
 package org.example;
 
-fun add(num1:Double,num2:Double){
+fun add(num1:Double,num2:Double):Double{
     return num1+num2
 }
 
