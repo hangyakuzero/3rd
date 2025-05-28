@@ -35,11 +35,12 @@ application {
     // Define the main class for the application.
     mainClass.set("org.example.MainKt")
 }
-tasks.test { useJUnit()
-testLogging {
-events("passed", "failed", "skipped")
-exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
- showStandardStreams = true
-}
-outputs.upToDateWhen { false }
+tasks.test {
+    useJUnit()
+    testLogging {
+        events("passed", "failed", "skipped")
+        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
+        showStandardStreams = true
+    }
+    outputs.upToDateWhen { false }
 }
