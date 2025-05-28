@@ -7,10 +7,12 @@ import org.junit.Test;
 import org.junit.Assert.*;
 
 class MainTest {
+  @Test
    fun testAddNumbers(){
     val num1=10.0
     val num2=5.0
     val result=add(num1,num2)
+    println("sum of $num1 and $num2 is $result")
     assertEquals("sum of $num1 and $num2 should be 15.0",15.0,result,0.001)
    } 
 }
